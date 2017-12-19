@@ -1,0 +1,27 @@
+<%= form_with(model: listening, local: true) do |form| %>
+  <% if listening.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(listening.errors.count, "error") %> prohibited this listening from being saved:</h2>
+
+      <ul>
+      <% listening.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :listening_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :file_url %>
+    <%= form.text_area :file_url, id: :listening_file_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

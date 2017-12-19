@@ -90,3 +90,29 @@ package.jsonに追加
   }
 }
 ```
+
+## howlerチャレンジ
+
+```js
+<script src="/path/to/howler.js"></script>
+<script>
+    var sound = new Howl({
+      src: ['sound.webm', 'sound.mp3']
+    });
+</script>
+```
+
+もっとも簡単なやつから
+
+## とりあえず、scaffold
+
+rails g scaffold listenings
+
+### どんなカラムが必要?
+
+まあとりあえず、名前とURL
+
+### カラムの規約
+https://qiita.com/genzouw/items/35022fa96c120e67c637
+
+`rails g scaffold listenings name:string file_url:text`

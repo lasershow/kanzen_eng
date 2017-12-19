@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @listening.name %>
+</p>
+
+<p>
+  <strong>File url:</strong>
+  <%= @listening.file_url %>
+</p>
+
+<%= link_to 'Edit', edit_listening_path(@listening) %> |
+<%= link_to 'Back', listenings_path %>
