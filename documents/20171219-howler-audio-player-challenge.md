@@ -76,3 +76,17 @@ https://yarnpkg.com/ja/docs/install
 
 ### yarn 使い方
 https://yarnpkg.com/ja/docs/usage
+
+### yarn add howler
+
+package.jsonに追加
+
+```
+{
+  "name": "kaizen_eng",
+  "private": true,
+  "dependencies": {
+    "howler": "^2.0.7"
+  }
+}
+```
